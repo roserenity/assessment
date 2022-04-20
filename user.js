@@ -4,16 +4,16 @@ var userObjList = []
 function renderUsers(userObjList){
     console.log(userObjList)
     for(var user of userObjList){
-        var card = '<div class="col-lg-6 col"><div class="card shadow m-2" > <div class="card-body d-flex flex-row">'
-        card += '<div class="p-2"> <img src="assets/userphoto.png"/> </div>'
-        card += '<div class="p-2"> <h4 id="name"> <b>' + user.name + '</b> </h4>'
-        card += '<h6> Email: <b>'+ user.email+'</b> </h6>'
-        card += '<h6> Mobile: <b>'+ user.phone+'</b> </h6>'
-        card += '<h6> Company: <b>'+ user.company +'</b> </h6>'
-        card += '<h6> Address: <b>'+ user.address.city +'</b> </h6>'
-        card += '<h6> Website: <b>'+ user.website+'</b> </h6>'
-        card += '<h6> Age: <b>'+ user.age+'</b> </h6>'
-        card += '</div> </div> </div> </div>'
+        var card = '<div class="col-lg-6 col-xs-12"><div class="card shadow w-100 h-100" > <div class="card-body d-flex flex-lg-row flex-column">'
+        card += '<div class="p-2 text-wrap"> <img src="assets/userphoto.png"/> </div>'
+        card += '<div class="p-2"> <h3> <b>' + user.name + '</b> </h3>'
+        card += 'Email: <b>'+ user.email+'</b>'
+        card += '<br/> Mobile: <b>'+ user.phone+'</b>'
+        card += '<br/> Company: <b>'+ user.company +'</b>'
+        card += '<br/> Address: <b>'+ user.address.city +'</b>'
+        card += '<br/> Website: <b>'+ user.website+'</b>'
+        card += '<br/> Age: <b>'+ user.age+'</b>'
+        card += '</div> </div> </div> < </div>'
         document.getElementById("userSection").innerHTML += card
     }
 }
