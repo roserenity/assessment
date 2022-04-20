@@ -13,7 +13,7 @@ function renderUsers(userObjList){
         card += '<br/> Address: <b>'+ user.address.city +'</b>'
         card += '<br/> Website: <b>'+ user.website+'</b>'
         card += '<br/> Age: <b>'+ user.age+'</b>'
-        card += '</div> </div> </div> < </div>'
+        card += '</div> </div> </div> </div>'
         document.getElementById("userSection").innerHTML += card
     }
 }
